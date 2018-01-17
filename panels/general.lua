@@ -179,6 +179,36 @@ function GeneralOptions:CreateMinDurationSlider()
 	return s
 end
 
+function GeneralOptions:CreateTextShadowXSlider()
+	local parent = self
+	local s = self:NewSlider(L.TextShadowX, -5, 5, 1)
+
+	s.SetSavedValue = function(self, value)
+		parent:GetGroupSets().textShadowX = value
+	end
+
+	s.GetSavedValue = function(self)
+		return parent:GetGroupSets().textShadowX
+	end
+
+	return s
+end
+
+function GeneralOptions:CreateTextShadowYSlider()
+	local parent = self
+	local s = self:NewSlider(L.TextShadowY, -5, 5, 1)
+
+	s.SetSavedValue = function(self, value)
+		parent:GetGroupSets().textShadowY = value
+	end
+
+	s.GetSavedValue = function(self)
+		return parent:GetGroupSets().textShadowY
+	end
+
+	return s
+end
+
 function GeneralOptions:CreateMinSizeSlider()
 	local parent = self
 	local s = self:NewSlider(L.MinSize, 0, 200, 1)
