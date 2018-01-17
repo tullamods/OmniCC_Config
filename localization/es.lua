@@ -41,6 +41,8 @@ L.Color_hours = "Más de una hora"
 L.SpiralOpacity = "Transparencia de los espirales"
 L.UseAniUpdater = "Optimizar rendimiento"
 
+L.TextShadowX = "Sombra de texto X"
+L.TextShadowY ="Sombra de texto Y"
 --text positioning
 L.XOffset = "X"
 L.YOffset = "Y"
