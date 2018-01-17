@@ -52,14 +52,14 @@ function GeneralOptions:AddWidgets()
 	local minSize = self:CreateMinSizeSlider()
 	minSize:SetPoint('BOTTOMLEFT', minDuration, 'TOPLEFT', 0, SLIDER_SPACING)
 	minSize:SetPoint('BOTTOMRIGHT', minDuration, 'TOPRIGHT', 0, SLIDER_SPACING)
-	
+		
 	local textShadowX = self:CreateTextShadowXSlider()
-	minSize:SetPoint('BOTTOMLEFT', minSize, 'TOPLEFT', 0, SLIDER_SPACING)
-	minSize:SetPoint('BOTTOMRIGHT', minSize, 'TOPRIGHT', 0, SLIDER_SPACING)
-	
+	textShadowX:SetPoint('BOTTOMLEFT', minSize, 'TOPLEFT', 0, SLIDER_SPACING)
+	textShadowX:SetPoint('BOTTOMRIGHT', minSize, 'TOPRIGHT', 0, SLIDER_SPACING)
+
 	local textShadowY = self:CreateTextShadowYSlider()
-	minSize:SetPoint('BOTTOMLEFT', textShadowX, 'TOPLEFT', 0, SLIDER_SPACING)
-	minSize:SetPoint('BOTTOMRIGHT', textShadowX, 'TOPRIGHT', 0, SLIDER_SPACING)
+	textShadowY:SetPoint('BOTTOMLEFT', textShadowX, 'TOPLEFT', 0, SLIDER_SPACING)
+	textShadowY:SetPoint('BOTTOMRIGHT', textShadowX, 'TOPRIGHT', 0, SLIDER_SPACING)
 end
 
 function GeneralOptions:UpdateValues()
