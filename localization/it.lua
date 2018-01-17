@@ -42,6 +42,8 @@ L.Color_controlled = "Perdita del controllo"
 L.SpiralOpacity = "Trasparenza della spirale"
 L.UseAniUpdater = "Ottimizza le prestazioni"
 
+L.TextShadowX = "Ombreggiatura del testo asse X"
+L.TextShadowY ="Ombreggiatura del testo asse Y"
 --text positioning
 L.XOffset = "Asse X"
 L.YOffset = "Asse Y"
