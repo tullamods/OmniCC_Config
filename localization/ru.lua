@@ -40,7 +40,7 @@ L.Color_minutes = "Меньше чем за час"
 L.Color_hours = "Один час или более"
 
 L.TextShadowX = "Тень текста Смещение по X"
-L.TextShadowY ="Тень текста Смещение по X Y"
+L.TextShadowY ="Тень текста Смещение по Y"
 --text positioning
 L.XOffset = "Смещение по X"
 L.YOffset = "Смещение по Y"
