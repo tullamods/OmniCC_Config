@@ -45,6 +45,8 @@ L.Color_controlled = "Kontrollverlust"
 L.SpiralOpacity = "Spiraltransparenz"
 L.UseAniUpdater = "Leistung optimieren"
 
+L.TextShadowX = "Text Schatten X-Versatz"
+L.TextShadowY ="Text Schatten Y-Versatz"
 --text positioning
 L.XOffset = "X-Versatz"
 L.YOffset = "Y-Versatz"
