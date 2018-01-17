@@ -42,6 +42,8 @@ L.Color_hours = "Une heure ou plus"
 L.SpiralOpacity = "Transparence des modèles de cooldown"
 L.UseAniUpdater = "Optimiser la performance"
 
+L.TextShadowX = "Ombre de texte horizontal"
+L.TextShadowY ="Ombre de texte vertical"
 --text positioning
 L.XOffset = "Positionnement horizontal"
 L.YOffset = "Positionnement vertical"
