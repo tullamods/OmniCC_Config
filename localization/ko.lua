@@ -42,7 +42,8 @@ L.Color_hours = "1시간 이상"
 L.Color_charging = "충전량 복원" 
 L.Color_controlled = "제어 불가 효과" 
 
-
+L.TextShadowX = "X 텍스트 그림자 오프셋"
+L.TextShadowY ="Y 텍스트 그림자 오프셋"
 --text positioning
 L.XOffset = "X 위치"
 L.YOffset = "Y 위치"
