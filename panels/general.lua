@@ -193,7 +193,7 @@ function GeneralOptions:CreateTextShadowXSlider()
 
 	s.SetSavedValue = function(self, value)
 		parent:GetGroupSets().textShadowX = value
-		Timer:ForAll('UpdateText')
+		Timer:ForAll('UpdateText', true)
 	end
 
 	s.GetSavedValue = function(self)
@@ -209,7 +209,7 @@ function GeneralOptions:CreateTextShadowYSlider()
 
 	s.SetSavedValue = function(self, value)
 		parent:GetGroupSets().textShadowY = value
-		Timer:ForAll('UpdateText')
+		Timer:ForAll('UpdateText', true)
 	end
 
 	s.GetSavedValue = function(self)
