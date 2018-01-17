@@ -22,8 +22,8 @@ function GeneralOptions:AddWidgets()
 	local scaleText = self:CreateScaleTextCheckbox()
 	scaleText:SetPoint('TOPLEFT', enableCDText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
 
-    local aniUpdate = self:CreateUseAniUpdaterCheckbox()
-    aniUpdate:SetPoint('TOPLEFT', scaleText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
+        local aniUpdate = self:CreateUseAniUpdaterCheckbox()
+        aniUpdate:SetPoint('TOPLEFT', scaleText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
 
 	local finishEffect = self:CreateFinishEffectPicker()
 	finishEffect:SetPoint('TOPLEFT', aniUpdate, 'BOTTOMLEFT', -16, -(BUTTON_SPACING + 16))
