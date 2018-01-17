@@ -43,6 +43,8 @@ L.Color_controlled = "Loss of control"
 L.SpiralOpacity = "Spiral transparency"
 L.UseAniUpdater = "Optimize performance"
 
+L.TextShadowX = "Text shadow X offset"
+L.TextShadowY ="Text shadow Y offset"
 --text positioning
 L.XOffset = "X Offset"
 L.YOffset = "Y Offset"
