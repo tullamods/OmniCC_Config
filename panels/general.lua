@@ -22,8 +22,8 @@ function GeneralOptions:AddWidgets()
 	local scaleText = self:CreateScaleTextCheckbox()
 	scaleText:SetPoint('TOPLEFT', enableCDText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
 
-    local aniUpdate = self:CreateUseAniUpdaterCheckbox()
-    aniUpdate:SetPoint('TOPLEFT', scaleText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
+        local aniUpdate = self:CreateUseAniUpdaterCheckbox()
+        aniUpdate:SetPoint('TOPLEFT', scaleText, 'BOTTOMLEFT', 0, -BUTTON_SPACING)
 
 	local finishEffect = self:CreateFinishEffectPicker()
 	finishEffect:SetPoint('TOPLEFT', aniUpdate, 'BOTTOMLEFT', -16, -(BUTTON_SPACING + 16))
@@ -52,6 +52,16 @@ function GeneralOptions:AddWidgets()
 	local minSize = self:CreateMinSizeSlider()
 	minSize:SetPoint('BOTTOMLEFT', minDuration, 'TOPLEFT', 0, SLIDER_SPACING)
 	minSize:SetPoint('BOTTOMRIGHT', minDuration, 'TOPRIGHT', 0, SLIDER_SPACING)
+		
+	local textShadowX = self:CreateTextShadowXSlider()
+	textShadowX:SetPoint('BOTTOMLEFT', minSize, 'TOPLEFT', 0, SLIDER_SPACING)
+	textShadowX:SetPoint('CENTER', minSize, 'CENTER', 0, SLIDER_SPACING)
+	textShadowX:SetWidth(minSize:GetWidth()*2-2)
+
+	local textShadowY = self:CreateTextShadowYSlider()
+	textShadowY:SetPoint('CENTER', minSize, 'CENTER', 0, SLIDER_SPACING)
+	textShadowY:SetPoint('BOTTOMRIGHT', minSize, 'TOPRIGHT', 0, SLIDER_SPACING)
+	textShadowY:SetWidth(minSize:GetWidth()*2-2)
 end
 
 function GeneralOptions:UpdateValues()
@@ -175,6 +185,38 @@ function GeneralOptions:CreateMinDurationSlider()
 	end
 
 	s.tooltip = L.MinDurationTip
+
+	return s
+end
+
+function GeneralOptions:CreateTextShadowXSlider()
+	local parent = self
+	local s = self:NewSlider(L.TextShadowX, -5, 5, 1)
+
+	s.SetSavedValue = function(self, value)
+		parent:GetGroupSets().textShadowX = value
+		Timer:ForAll('UpdateText', true)
+	end
+
+	s.GetSavedValue = function(self)
+		return parent:GetGroupSets().textShadowX
+	end
+
+	return s
+end
+
+function GeneralOptions:CreateTextShadowYSlider()
+	local parent = self
+	local s = self:NewSlider(L.TextShadowY, -5, 5, 1)
+
+	s.SetSavedValue = function(self, value)
+		parent:GetGroupSets().textShadowY = value
+		Timer:ForAll('UpdateText', true)
+	end
+
+	s.GetSavedValue = function(self)
+		return parent:GetGroupSets().textShadowY
+	end
 
 	return s
 end

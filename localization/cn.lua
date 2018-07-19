@@ -39,6 +39,8 @@ L.Color_seconds = "少于1分钟"
 L.Color_minutes = "少于1小时"
 L.Color_hours = "1小时或以上"
 
+L.TextShadowX = "X 文字阴影偏移"
+L.TextShadowY ="Y 文字阴影偏移"
 -- 文字定位
 L.XOffset = "X 偏移"
 L.YOffset = "Y 偏移"

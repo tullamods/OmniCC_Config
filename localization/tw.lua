@@ -41,6 +41,8 @@ L.Color_hours = "1小時或以上"
 
 L.UseAniUpdater = "優化效能"
 
+L.TextShadowX = "Text shadow X offset"
+L.TextShadowY ="Text shadow Y offset"
 -- 文字定位
 L.XOffset = "X 偏移"
 L.YOffset = "Y 偏移"
