@@ -4,9 +4,7 @@
 ## Notes-koKR: OmniCC의 설정 메뉴
 ## Author: Tuller
 ## Dependencies: OmniCC
+## Version: 8.2.4
 ## LoadOnDemand: 1
-libs\libs.xml
-localization\localization.xml
-widgets\widgets.xml
-mainPanel.lua
-panels\panels.xml
+
+..\OmniCC\config\config.xml
